@@ -34,5 +34,12 @@ for (orbit of orbits) {
     orbit.style.top = `${randomPosition()[1]}px`;
 }
 
+function setToMove(){
+    // m 0 0 a 1 1 0 0 0 19 0 a 1 1 0 0 0 -19 0
+    let postitionX = highOrbit.style.left.split("px")[0];
+    let point = `m ${postitionX} ${Math.ceil(window.innerHeight/2)}`;
+    let path = `path("${point} a 1 1 0 0 0 ${postitionX} 0 a 1 1 0 0 0 -${postitionX} 0")`;
+    highOrbit.style.offsetPath = path;
+}
 
-
+setToMove();

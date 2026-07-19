@@ -24,7 +24,15 @@
 }
 
 #high-orbit {
-    top: 400px;  
+    top: 400px;
     background-color: blue;
     border-color: blue;
+    /* offset-path: path("M 0 0 C 0 -5 7 -5 7 0 C 7 5 0 5 0 0"); */
+    animation: move 3s linear infinite;
+}
+
+@keyframes move {
+    to {
+        offset-distance: 100%;
+    }
 }
