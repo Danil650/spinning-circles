@@ -1,19 +1,25 @@
-#centralOrbit {
-    border-style: solid;
-    border-radius: 100%;
+.orbit {
+  width: 8px;
+  height: 8px;
+  position: absolute;
 }
 
-#lowOrbit {
-    border-style: solid;
-    border-radius: 100%;
+#central-orbit {
+  border-style: solid;
+  border-radius: 100%;
 }
 
-#midOrbit {
-    border-style: solid;
-    border-radius: 100%;
+#low-orbit {
+  border-style: solid;
+  border-radius: 100%;
 }
 
-#highOrbit {
-    border-style: solid;
-    border-radius: 100%;
+#mid-orbit {
+  border-style: solid;
+  border-radius: 100%;
+}
+
+#high-orbit {
+  border-style: solid;
+  border-radius: 100%;
 }
