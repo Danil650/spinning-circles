@@ -2,24 +2,22 @@
   width: 8px;
   height: 8px;
   position: absolute;
+  border-style: solid;
+  border-radius: 100%;
 }
 
 #central-orbit {
-  border-style: solid;
-  border-radius: 100%;
+
 }
 
 #low-orbit {
-  border-style: solid;
-  border-radius: 100%;
+
 }
 
 #mid-orbit {
-  border-style: solid;
-  border-radius: 100%;
+
 }
 
 #high-orbit {
-  border-style: solid;
-  border-radius: 100%;
+    
 }
