@@ -4,6 +4,7 @@ const lowOrbit = document.getElementById("low-orbit");
 const midOrbit = document.getElementById("mid-orbit");
 const highOrbit = document.getElementById("high-orbit");
 
+const orbits = [lowOrbit, midOrbit, highOrbit]
 
 // constants
 const maxOrbitSize = 64;
@@ -23,16 +24,15 @@ function randomSize() {
     return Math.ceil(Math.random() * (maxOrbitSize - minOrbitSize)) + minOrbitSize;
 } 
 
-console.log(randomPosition()[0])
+console.log(randomPosition()[0]);
 
 centralOrbit.style.left = `${Math.ceil(window.innerWidth/2)}px`;
 centralOrbit.style.top = `${Math.ceil(window.innerHeight/2)}px`;
 
-lowOrbit.style.left = `${randomPosition()[0]}px`;
-lowOrbit.style.top = `${randomPosition()[1]}px`;
+for (orbit of orbits) {
+    orbit.style.left = `${randomPosition()[0]}px`;
+    orbit.style.top = `${randomPosition()[1]}px`;
+}
 
-midOrbit.style.left = `${randomPosition()[0]}px`;
-midOrbit.style.top = `${randomPosition()[1]}px`;
 
-highOrbit.style.left = `${randomPosition()[0]}px`;
-highOrbit.style.top = `${randomPosition()[1]}px`;
+
